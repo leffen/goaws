@@ -1,16 +1,14 @@
 package conf
 
 import (
+	"encoding/json"
 	"io/ioutil"
 	"path/filepath"
 
-	log "github.com/sirupsen/logrus"
-
-	"encoding/json"
-
 	"github.com/ghodss/yaml"
-	"github.com/p4tin/goaws/app"
-	"github.com/p4tin/goaws/app/common"
+	"github.com/leffen/goaws/app"
+	"github.com/leffen/goaws/app/common"
+	log "github.com/sirupsen/logrus"
 )
 
 var envs map[string]app.Environment

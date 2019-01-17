@@ -1,7 +1,6 @@
 package gosns
 
 import (
-	"github.com/gorilla/mux"
 	"net/http"
 	"net/http/httptest"
 	"net/url"
@@ -9,8 +8,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/p4tin/goaws/app"
-	"github.com/p4tin/goaws/app/common"
+	"github.com/gorilla/mux"
+	"github.com/leffen/goaws/app"
+	"github.com/leffen/goaws/app/common"
 )
 
 func TestListTopicshandler_POST_NoTopics(t *testing.T) {

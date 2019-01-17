@@ -16,13 +16,13 @@ run: dep fmt test
 	go run app/cmd/goaws.go
 
 git-release:
-	curl --data $(APIJSON) https://api.github.com/repos/p4tin/goaws/releases?access_token=$(GITHUB_API_KEY)
+	curl --data $(APIJSON) https://api.github.com/repos/leffen/goaws/releases?access_token=$(GITHUB_API_KEY)
 
 linux:
 	GOOS=linux GOARCH=amd64 go build -o goaws_linux_amd64  app/cmd/goaws.go
 
 docker-release: linux
-	docker build -t pafortin/goaws .
-	docker tag pafortin/goaws pafortin/goaws:$(VERSION)
+	docker build -t leffen/goaws .
+	docker tag leffen/goaws leffen/goaws:$(VERSION)
 
 

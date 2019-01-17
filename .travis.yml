@@ -1,6 +1,6 @@
 language: go
 
-go_import_path: github.com/p4tin/goaws
+go_import_path: github.com/leffen/goaws
 
 go:
   - 1.9.2

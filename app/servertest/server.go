@@ -4,13 +4,12 @@ import (
 	"fmt"
 	"net"
 	"net/http"
+	"strings"
 	"sync"
 
-	"github.com/p4tin/goaws/app/router"
+	"github.com/leffen/goaws/app"
+	"github.com/leffen/goaws/app/router"
 	log "github.com/sirupsen/logrus"
-
-	"github.com/p4tin/goaws/app"
-	"strings"
 )
 
 // Server is a fake SQS / SNS server for testing purposes.

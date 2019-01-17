@@ -6,11 +6,10 @@ import (
 	"os"
 	"time"
 
+	"github.com/leffen/goaws/app/conf"
+	"github.com/leffen/goaws/app/gosqs"
+	"github.com/leffen/goaws/app/router"
 	log "github.com/sirupsen/logrus"
-
-	"github.com/p4tin/goaws/app/conf"
-	"github.com/p4tin/goaws/app/gosqs"
-	"github.com/p4tin/goaws/app/router"
 )
 
 func main() {
